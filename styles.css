@@ -1,0 +1,138 @@
+*{
+   box-sizing: border-box;
+}
+ body{
+    background-color: rgb(243, 254, 242);
+ }
+ h1{
+    text-align: center;
+    background-color: #000000;
+    margin-left: 10%;
+    margin-right: 10%;
+    color: white;
+ }
+ h2,h3,h4{
+   text-align: center;
+ }
+ p{
+    margin-right: 10%;
+    margin-left: 10%;
+    font-size: 20px;
+ }
+ img{
+    border-radius: 20px;
+    padding: 12px;
+    border: 3px solid rgb(69, 133, 36);
+ }
+iframe, img, frameborder{
+   align-items: center;
+}
+ .container{
+    background-color:rgb(90, 152, 72);
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 1em;
+    border-radius: 5px;
+    border: 2px solid #eeeeee;
+ }
+ .group{
+    border-radius: 5px;
+    border: 2px solid #000000;
+    background-color: #f7f7f7;
+    padding: 1vh 0;
+    margin: 5px;
+ }
+ .group::after{
+    display: table;
+    content: " ";
+    clear: both;
+ }
+ form{
+    width: 80%;
+    background-color: white;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 1em;
+ }
+ form::after{
+    display: table;
+    content: " ";
+    clear: both;
+ }
+ input[type=text], input[type=email], select{
+    width: 100%;
+    border-radius: 5px;
+    padding: 10px 20px;
+    margin: 10px 0px;
+    background-color: #f1f1f1;
+ }
+ select>option{
+    font-size: 1.2rem;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+ }
+ select{
+    appearance: button;
+    border-radius: 2px;
+    background-color: #1a351b;
+    border: 1px solid #cccccc;
+    border-radius: 5px;
+    color: white;
+    font-size: inherit;
+    display: block;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.2rem;
+    font-weight: bold;
+ }
+ input[type="submit"], input[type="reset"]{
+    width: 505;
+    display: block;
+    padding: 10px 20px;
+    margin: 10px 0;
+    border-radius: 5px;
+    float: left;
+    background-color: grey;
+    font-size: 1.2rem;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+ }
+ lable, h3{
+    font-size: 1.2rem;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+ }
+ label{
+    cursor: normal;
+ }
+ lable.normal{
+    font-weight: normal;
+ }
+ input[type=radio]{
+    appearance: none;
+    display: inline-block;
+    position: relative;
+    background-color: #f1f1f1;
+    color: #665;
+    top: 10px;
+    height: 30px;
+    width: 30px;
+    border-radius: 50px;
+    cursor: pointer;
+ }
+ input[type=radio]:hover{
+    background-color: #f7f7f7;
+ }
+ @media only screen and (max-width: 600px){
+ img{
+    width: 50vw;;
+    height: 30vh;
+ }
+}
+@media only screen and (max-width: 1400px) and (min-width: 601px){
+   img{
+      width: 40%;
+      height: 20%;
+   }
+}
+

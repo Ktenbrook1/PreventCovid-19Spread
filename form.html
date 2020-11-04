@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SignUp</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <link rel="stylesheet" type="text/css" href="my.css">
+</head>
+<body>
+    <header>
+        <img src="covid.png" alt="logo">
+    <nav>
+            <ul class="nav_links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="proper.html">Handwashing</a></li>
+                <li><a href="sneeze.html">Spreading</a></li>
+                <li><a href="stayHome.html">Stay Home</a></li>
+                <li><a href="where.html">Test</a></li>
+            </ul>
+        </nav>
+        <a class="form" href="form.html"><button>Sign Up</button></a>
+    </header>
+    <div class="container">
+        <h1>Sign Up For Updates About Novel Corona Virus</h1>
+        <form id="Form" action="feedback.php" method="post">
+            <label for='firstName'>First Name: </label>
+            <input type="text" id="firstName" name="firstName" required>
+            <label for='lastName'>Last Name: </label>
+            <input type="text" id="lastName" name="lastName" required>
+            <label for='email'>Email: </label>
+            <input type="text" id="email" name="email" required>
+  
+            <div class="group">
+                <h3>Have you, or someone you know, been impacted by Covid-19?</h3>
+                <lable class="normal" for="impactYes">YES</lable>
+                <input type="radio" id="impactYes" name="impact" value="yes">
+                <lable class="normal" for="impactNo">NO</lable>
+                <input type="radio" id="impactNo" name="impact" value="no">
+                <lable class="normal" for="impactIDK">Not Sure</lable>
+                <input type="radio" id="notSure" name="impact" value="no">
+            </div>
+  
+                <input type="submit" value="Send">
+                <input type="reset" value="Clear">
+        </form>
+    </div>
+    <footer>
+        WebMaster: Katelynn Tenbrook
+        <br>
+        Last Modified: May 5th 2020
+    </footer>
+</body>
+</html>

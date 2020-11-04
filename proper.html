@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proper Handwashing</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <link rel="stylesheet" type="text/css" href="my.css">
+    <!--Consistant Nav-->
+    <script>
+    var i = 0; 			// Start Point
+    var images = [];	// Images Array
+    var time = 3000;	// Time Between Switch
+         
+    // Image List
+    images[0] = "1.JPG";
+    images[1] = "2.JPG";
+    images[2] = "3.JPG";
+    images[3] = "4.JPG";
+    images[4] = "5.JPG";
+    images[5] = "6.JPG";
+    
+    // Change Image
+    function changeImg(){
+        document.slide.src = images[i];
+    
+        // Check If Index Is Under Max
+        if(i < images.length - 1){
+          // Add 1 to Index
+          i++; 
+        } else { 
+            // Reset Back To O
+            i = 0;
+        }
+    
+        // Run function every x seconds
+        setTimeout("changeImg()", time);
+    }
+    
+    // Run function when page loads
+    window.onload=changeImg;
+    </script>
+    <nav>
+        
+    </nav>
+</head>
+<body>
+    <header>
+        <img src="covid.png" alt="logo">
+    <nav>
+            <ul class="nav_links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="proper.html">Handwashing</a></li>
+                <li><a href="sneeze.html">Spreading</a></li>
+                <li><a href="stayHome.html">Stay Home</a></li>
+                <li><a href="where.html">Test</a></li>
+            </ul>
+        </nav>
+        <a class="form" href="form.html"><button>Sign Up</button></a>
+    </header>
+    <h1>Proper Hand Washing</h1>
+    <h4>In the slideshow down below we show and describe how to properly wash your hands.</h4>
+    <center><img name="slide"></center>   
+    <!--images that show a slide show hand washing-->
+    <p><strong>Step 1:</strong> Turn on the water to as warm as you can bear. The heat alone will kill most viruses and bacteria.</p>
+    <p><strong>Step 2:</strong> Pump the soap into your hands and lather your entire hands with the soap</p>
+    <p><strong>Step 3:</strong> Make sure to also wash your wrist and lower arms for further protection</p>
+    <p><strong>Step 4:</strong> Rinse away all remaining soap</p>
+    <p><strong>Step 5:</strong> Dry your hands with a single use paper towel when out in public. (When at home use a regular towel to prevent waste)</p>
+    <footer>
+        WebMaster: Katelynn Tenbrook
+        <br>
+        Last Modified: May 5th 2020
+    </footer>
+</body>
+
+</html>
